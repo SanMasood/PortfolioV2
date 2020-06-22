@@ -336,7 +336,7 @@ li{
     
 }
 
-.portfolio-item: :last-child{
+.portfolio-item :last-child{
     margin-bottom: 0;
 }
 .portfolio-img{
@@ -367,7 +367,7 @@ li{
     margin-top: 2.5rem;
     font-size: 1.5rem;
     text-transform: uppercase;
-    colot: #3882ff;
+    color: #3882ff;
     transition: color 650ms;
 
 }
@@ -572,6 +572,7 @@ input[type="submit"]:hover{
     .menu-toggler{
         top: 2rem;
         right: 2rem;
+        /*position: fixed*/;
     }
     .landing-text h1{
         font-size: 8rem;
