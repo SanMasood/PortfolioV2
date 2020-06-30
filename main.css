@@ -7,8 +7,9 @@
 
 html{
     font-size: 10px;
-    font-family: 'Roboto', sans-serif;
+    font-family: Georgia;
     color: #eee;
+    font-size: smaller;
 }
 
 body{
@@ -202,7 +203,7 @@ li{
     z-index: 1;
 }
 .landing-text h1{
-    font-size: 20rem;
+    font-size: 16rem;
     font-family: 'The Historia Demo', sans-serif;
     background: linear-gradient(to top, #ffe838, #fd57df);
     /*background-clip: text;*/
@@ -244,8 +245,11 @@ li{
 }
 
 .profile-img{
+    
     flex: 1;
     margin-right: 5rem;
+    border-radius: 10px 10px 30px 30px;
+    overflow: auto;
 }
 .about-details{
     flex: 1;
@@ -272,8 +276,8 @@ li{
 
 }
 .iconify{
-    height: 44px;
-    width: 44px;
+    height: 56px;
+    width: 56px;
     background-color: white;
     color: rgb(43, 41, 41);
     border-radius: .5rem;
@@ -611,7 +615,8 @@ input[type="submit"]:hover{
     }
     .up{
         right: 2rem;
-    }
+    }   
+    
 
 }
 /*End media queries*/
