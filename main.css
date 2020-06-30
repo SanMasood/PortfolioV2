@@ -126,13 +126,14 @@ li{
 }
 .nav-link {
     font-family: 'The Historia Demo', sans-serif;
+    color: rgb(51, 50, 50);
     font-size: 5rem;
     padding: 1rem;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-    background: linear-gradient(to top, #ffe838, #fd57df);
+    background: linear-gradient(to top, #6d6103, #800669);
     /*background-clip: text;*/
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -205,7 +206,7 @@ li{
 .landing-text h1{
     font-size: 16rem;
     font-family: 'The Historia Demo', sans-serif;
-    background: linear-gradient(to top, #ffe838, #fd57df);
+    background: linear-gradient(to top, #f3e262, #a30165);
     /*background-clip: text;*/
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -315,14 +316,14 @@ li{
 .icon-container{
     width: 10rem;
     height: 10rem;
-    border: 3px solid #ffe838;
-    background-color: #fd57bf;
+    border: 3px solid #a18f03;
+    background-color: #520234;
     margin-bottom: 2rem;
     display: flex;
     transform: rotate(45deg);
 }
 .icon-container i{
-    color: #ffe838;
+    color: #96850a;
     font-size: 5rem;
     margin: auto;
     transform: rotate(-45deg);
