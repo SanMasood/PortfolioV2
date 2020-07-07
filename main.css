@@ -8,14 +8,30 @@
 html{
     font-size: 10px;
     font-family: Georgia;
-    color: #eee;
+    color: rgba(10, 10, 10, 0.726);
     font-size: smaller;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 body{
     width: 100%;
     height: 100%;
-    background: url("images/sitebg.jpg") no-repeat center fixed;
+    
+    background: linear-gradient(-45deg, #f78664b7, #f5649cbe, #69d5fc, #57f8d3);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
     background-size: cover;
 
 }
@@ -125,8 +141,8 @@ li{
 
 }
 .nav-link {
-    font-family: 'The Historia Demo', sans-serif;
-    color: rgb(51, 50, 50);
+    font-family: 'Cabin Sketch', sans-serif;
+    color: rgb(22, 22, 22);
     font-size: 5rem;
     padding: 1rem;
 }
@@ -163,7 +179,7 @@ li{
 }
 
 .bar{
-    background: linear-gradient(to right, #ffe838, #fd57bf);
+    background: linear-gradient(to right, #054e8a, #49e70b);
     width: 100%;
     height: 4px;
     border-radius: .8rem;
@@ -204,10 +220,12 @@ li{
     z-index: 1;
 }
 .landing-text h1{
-    font-size: 16rem;
-    font-family: 'The Historia Demo', sans-serif;
+    font-size: 13rem;
+    /*font-family: 'The Historia Demo', sans-serif;*/
+    font-family: 'Cabin Sketch', cursive;
+
     background: linear-gradient(to top, #f3e262, #a30165);
-    /*background-clip: text;*/
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 1rem;
@@ -316,14 +334,14 @@ li{
 .icon-container{
     width: 10rem;
     height: 10rem;
-    border: 3px solid #a18f03;
-    background-color: #520234;
+    border: 3px solid #ffea4e;
+    background-color: #73f53fb4;
     margin-bottom: 2rem;
     display: flex;
     transform: rotate(45deg);
 }
 .icon-container i{
-    color: #96850a;
+    color: #f58f53d7;
     font-size: 5rem;
     margin: auto;
     transform: rotate(-45deg);
@@ -441,25 +459,37 @@ li{
 
 /*Start contact*/
 .contact{
-    background-color: #221e3f;
+   /* background-color: #221e3f;*/
 }
 form{
     width: 70%;
     margin: 0 auto;
+   
 }
-.form label{
-    font-size: 1.5rem;
-}
+/*.form label{
+    font-size: 50px;
+    color: red;
+}*/
 input, select, textarea{
     width: 100%;
     padding: 1rem;
     margin-bottom: 5px;
-    outline-color: #fd57bf;
+    font-size: 15px;
+    border: none;
+    box-shadow: 0 0 10px 0 rgba(3, 192, 199, 0.897);
+    border-radius: 10px;
+    
 }
+.contact label{
+    font-size: 20px;
+    
+    
+}
+
 input[type="submit"]{
     width: initial;
-    background-color: #fd57df;
-    color: #eee;
+    background-color: #57fde7c0;
+    color: rgb(37, 2, 2);
     padding: 1rem 2rem;
     border-radius: .8rem;
     cursor: pointer;
@@ -468,13 +498,13 @@ input[type="submit"]{
 
 input[type="submit"]:hover{
     color: #221e3f;
-    background-color: #ffe838;
+    background-color: #fced7ebe;
 }
 
 .copyright{
     width: 100%;
     text-align: center;
-    background-color: #16162d;
+    background-color: #73f3c2b6;
     padding: 2rem 0;
     position: relative;
 }
@@ -506,7 +536,7 @@ input[type="submit"]:hover{
 /*Start animations*/
 @keyframes pulse{
     0%{
-        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+        box-shadow: 0 0 0 0 rgba(253, 87, 192, 0.959);
     }
     70%{
         box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
@@ -520,12 +550,12 @@ input[type="submit"]:hover{
 /*Start media queries*/
 @media screen and (max-width: 768px){
 
-    body{
+    /*body{
   
         background: url("images/sitebg2.jpg") no-repeat center fixed;
         background-size: cover;
 
-    }
+    }*/
     .landing-text h1{
         font-size: 15rem;
     }
@@ -556,6 +586,7 @@ input[type="submit"]:hover{
     .icon-container{
         width: 7rem;
         height: 7rem;
+       
     }
     .icon-container i{
         font-size: 4rem;
