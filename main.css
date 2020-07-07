@@ -13,17 +13,6 @@ html{
 }
 
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
 
 body{
     width: 100%;
@@ -540,14 +529,26 @@ input[type="submit"]:hover{
 /*Start animations*/
 @keyframes pulse{
     0%{
-        box-shadow: 0 0 0 0 rgba(253, 87, 192, 0.959);
+        box-shadow: 0 0 0 0 rgba(25, 241, 241, 0.959);
     }
     70%{
-        box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
+        box-shadow: 0 0 0 2rem rgba(252, 118, 203, 0);
     }
     100%{
-        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+        box-shadow: 0 0 0 0 rgba(253, 87, 192, 0.74);
     }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 /*End animations*/
 
