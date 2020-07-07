@@ -253,7 +253,7 @@ li{
 
 .profile-img{
     
-    flex: .5;
+    flex: .35;
     margin-right: 5rem;
     border-radius: 40%;
     overflow: auto;
